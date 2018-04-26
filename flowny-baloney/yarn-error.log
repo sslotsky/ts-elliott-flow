@@ -1,0 +1,47 @@
+Arguments: 
+  /home/sam/.nvm/versions/node/v8.11.1/bin/node /usr/share/yarn/bin/yarn.js add react react-dom parcel
+
+PATH: 
+  /home/sam/.cargo/bin:/home/sam/.opam/4.02.3+buckle-master/bin:/home/sam/.cargo/bin:/home/sam/bin:/home/sam/.local/bin:/home/sam/.nvm/versions/node/v8.11.1/bin:/home/sam/.cargo/bin:/home/sam/.rvm/gems/ruby-2.4.0/bin:/home/sam/.rvm/gems/ruby-2.4.0@global/bin:/home/sam/.rvm/rubies/ruby-2.4.0/bin:/home/sam/bin:/home/sam/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/sam/.rvm/bin:/home/sam/.rvm/bin:/home/sam/.rvm/bin:/home/sam/.manifold/bin:/home/sam/.manifold/bin:./node_modules/
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  8.11.1
+
+Platform: 
+  linux x64
+
+npm manifest: 
+  {
+    "name": "flowny-baloney",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: /home/sam/ts-elliott-flow/flowny-baloney/node_modules/parcel: Command failed.
+  Exit code: 1
+  Command: sh
+  Arguments: -c echo "You are looking for 'parcel-bundler'" && exit 1
+  Directory: /home/sam/ts-elliott-flow/flowny-baloney/node_modules/parcel
+  Output:
+  You are looking for 'parcel-bundler'
+      at ProcessTermError.MessageError (/usr/share/yarn/lib/cli.js:186:110)
+      at new ProcessTermError (/usr/share/yarn/lib/cli.js:226:113)
+      at ChildProcess.<anonymous> (/usr/share/yarn/lib/cli.js:30281:17)
+      at emitTwo (events.js:126:13)
+      at ChildProcess.emit (events.js:214:7)
+      at maybeClose (internal/child_process.js:925:16)
+      at Socket.stream.socket.on (internal/child_process.js:346:11)
+      at emitOne (events.js:116:13)
+      at Socket.emit (events.js:211:7)
+      at Pipe._handle.close [as _onclose] (net.js:567:12)

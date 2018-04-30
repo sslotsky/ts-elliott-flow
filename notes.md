@@ -16,6 +16,31 @@ The majority of typings for libraries which use HOCs use this approach or someth
 
 [HOCs with Flow](https://flow.org/en/docs/react/hoc/)
 
+### Begin
+
+#### First hiccup
+
+```
+Error ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ node_modules/config-chain/test/broken.json:11:3
+
+Unexpected string
+
+      8│     "url": "https://github.com/dominictarr/config-chain.git"
+      9│   }
+     10│   //missing , and then this comment. this json is intensionally invalid
+     11│   "dependencies": {
+     12│     "proto-list": "1",
+     13│     "ini": "~1.0.2"
+     14│   },
+```
+
+##### Solution
+
+```
+[ignore]
+.*/node_modules/config-chain/*
+```
+
 ## Comparisons
 
 [James Kyle's post comparing on-boarding process](https://jamie.build/adopting-flow-and-typescript.html)
